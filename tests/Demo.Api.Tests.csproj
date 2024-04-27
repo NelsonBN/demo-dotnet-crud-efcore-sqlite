@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+
+    <RootNamespace>Demo.Api.Tests</RootNamespace>
+    <AssemblyName>Demo.Api.Tests</AssemblyName>
+
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions.Web" Version="1.3.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageReference Include="xunit" Version="2.7.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="FluentAssertions" Version="6.12.0" />
+    <PackageReference Include="Testcontainers" Version="3.8.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.4" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Demo.Api.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+    <Using Include="FluentAssertions" />
+  </ItemGroup>
+
+
+</Project>

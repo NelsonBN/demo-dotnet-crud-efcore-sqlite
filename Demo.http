@@ -1,0 +1,36 @@
+@Host = http://localhost:8080
+@id = 1327099a-3f37-487e-8e74-12e01602d73c
+
+GET {{Host}}/products
+Accept: application/json
+
+###
+
+GET {{Host}}/products/{{id}}
+Accept: application/json
+
+###
+
+POST {{Host}}/products
+Content-Type: application/json
+
+{
+    "name": "Product 11",
+    "quantity": 100,
+    "price": 1
+}
+
+###
+
+PUT {{Host}}/products/{{id}}
+Content-Type: application/json
+
+{
+    "name": "Product 122",
+    "quantity": 10,
+    "price": 12
+}
+
+###
+
+DELETE {{Host}}/products/{{id}}
