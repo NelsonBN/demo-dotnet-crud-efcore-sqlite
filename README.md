@@ -1,4 +1,4 @@
-# Demo - .NET With EF Core and SQLLite
+# Demo - .NET With EF Core and SQLite
 
 ## EF Core
 
